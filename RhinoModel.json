@@ -1,0 +1,18 @@
+{
+    "$id": "https://raw.githubusercontent.com/hypar-io/Schemas/master/FacadePanel.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A Rhino model.",
+    "title": "RhinoModel",
+    "x-namespace": "Elements",
+    "type": ["object", "null"],
+    "allOf": [{"$ref": "https://hypar.io/Schemas/Element.json"}],
+    "required": ["Thickness"],
+    "discriminator": "discriminator",
+    "properties": {
+        "Model": {
+            "type": "string",
+            "description": "The serialized Rhino model."
+        } 
+    },
+    "additionalProperties": false
+}
