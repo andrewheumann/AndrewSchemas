@@ -1,0 +1,22 @@
+{
+    "$id": "https://raw.githubusercontent.com/hypar-io/Schemas/master/RhinoObject.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A Rhino object.",
+    "title": "RhinoObject",
+    "x-namespace": "Elements",
+    "type": ["object", "null"],
+    "allOf": [{"$ref": "https://hypar.io/Schemas/Element.json"}],
+    "required": ["Model", "Material"],
+    "discriminator": "discriminator",
+    "properties": {
+        "Model": {
+            "type": "string",
+            "description": "The serialized Rhino object."
+        },
+        "Material": {
+            "description": "The object's material.",
+            "$ref": "https://hypar.io/Schemas/Material.json"
+        }
+    },
+    "additionalProperties": false
+}
