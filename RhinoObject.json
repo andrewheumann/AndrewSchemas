@@ -1,5 +1,5 @@
 {
-    "$id": "https://raw.githubusercontent.com/hypar-io/Schemas/master/RhinoModel.json",
+    "$id": "https://raw.githubusercontent.com/hypar-io/Schemas/master/RhinoObject.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A Rhino object.",
     "title": "RhinoObject",
