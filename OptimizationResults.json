@@ -1,0 +1,59 @@
+{
+    "$id": "https://hypar.io/BuildingBlocks/schemas/OptimizationResults.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A set of data returned by the optimization service.",
+    "title": "OptimizationResults",
+    "x-namespace": "Elements",
+    "type": [
+        "object",
+        "null"
+    ],
+    "allOf": [
+        {
+            "$ref": "https://hypar.io/Schemas/Element.json"
+        }
+    ],
+    "additionalProperties": false,
+    "required": [
+        "discriminator",
+        "results"
+    ],
+    "discriminator": "discriminator",
+    "properties": {
+        "discriminator": {
+            "type": "string"
+        },
+        "results": {
+            "description": "The list of individual configurations.",
+            "type": [
+                "array",
+                "null"
+            ],
+            "items": {
+                "$ref": "#/definitions/ResultSet"
+            }
+        }
+    },
+    "definitions": {
+        "ResultSet": {
+            "title": "ResultSet",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "score": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                },
+                "result": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
