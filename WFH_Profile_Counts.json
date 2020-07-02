@@ -1,5 +1,5 @@
 {
-  "$id": "https://gl.githack.com/mr-engineering/mep_schemas/raw/master/WFHProfile.json",
+  "$id": "https://gl.githack.com/mr-engineering/mep_schemas/raw/master/WFHProfile_Counts.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "Profile of the number of days employees work from home each week.",
   "title": "WFHProfile",
