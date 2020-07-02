@@ -1,0 +1,49 @@
+{
+  "$id": "https://gl.githack.com/mr-engineering/mep_schemas/raw/master/WFHProfile.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Profile of the number of days employees work from home each week.",
+  "title": "WFHProfile",
+  "x-namespace": "Elements",
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "type": "object",
+  "discriminator": "discriminator",
+  "properties": {
+    "Full Time WFH": {
+          "description": "Number of employees who always work from home.",
+          "type": "number",
+          "minimum": 0,
+          "maxiumum": 1000
+        },
+    "WFH 4 days/wk": {
+          "description": "Number of employees who work from home 4 days per week.",
+          "type": "number",
+          "minimum": 0,
+          "maxiumum": 1000
+        },
+    "WFH 3 days/wk": {
+          "description": "Number of employees who work from home 3 days per week.",
+          "type": "number",
+          "minimum": 0,
+          "maxiumum": 1000
+        },
+    "WFH 2 days/wk": {
+          "description": "Number of employees who work from home 2 days per week.",
+          "type": "number",
+          "minimum": 0,
+          "maxiumum": 1000
+        },
+    "WFH 1 days/wk": {
+          "description": "Number of employees who work from home 1 day per week.",
+          "type": "number",
+          "minimum": 0,
+          "maxiumum": 1000
+        },
+    "Full Time Office": {
+          "description": "Number of employees who never work from home.",
+          "type": "number",
+          "minimum": 0,
+          "maxiumum": 1000
+        }
+  },
+  "additionalProperties": false
+}
