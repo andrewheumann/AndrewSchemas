@@ -1,0 +1,47 @@
+{
+    "$id": "https://raw.githubusercontent.com/andrewheumann/AndrewSchemas/master/HeadcountData.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Profile of the number of days employees work from home each week.",
+    "title": "HeadcountData",
+    "x-namespace": "Elements",
+    "allOf": [
+        {
+            "$ref": "https://hypar.io/Schemas/Element.json"
+        }
+    ],
+    "type": "object",
+    "discriminator": "discriminator",
+    "properties": {
+        "Total Headcount": {
+            "description": "Number of employees",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1000
+        },
+        "Override Or Not": {
+            "type": "string",
+            "description": "Default or Override for Remote Work Profiler"
+        },
+        "Biz Ops Percentage": {
+            "description": "The % of workforce in Business Operations.",
+            "type": "number"
+        },
+        "Prof Rel Percentage": {
+            "description": "The % of workforce in Professional and Related Occupations.",
+            "type": "number"
+        },
+        "Office Admin Percentage": {
+            "description": "The % of workforce in Office and Administrative Occupations.",
+            "type": "number"
+        },
+        "Sales Percentage": {
+            "description": "The % of workforce in Sales (HQ).",
+            "type": "number"
+        },
+        "Field Staff Percentage": {
+            "description": "The % of workforce in Field positions.",
+            "type": "number"
+        }
+    },
+    "additionalProperties": false
+}
