@@ -1,0 +1,57 @@
+{
+    "$id": "https://raw.githubusercontent.com/andrewheumann/AndrewSchemas/master/DepartmentData.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Profile of the number of days employees work from home each week.",
+    "title": "DepartmentData",
+    "x-namespace": "Elements",
+    "allOf": [
+        {
+            "$ref": "https://hypar.io/Schemas/Element.json"
+        }
+    ],
+    "type": "object",
+    "discriminator": "discriminator",
+    "properties": {
+        "Department": {
+            "type": "string"
+        },
+        "Current Headcount": {
+            "description": "Number of employees",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "Forecast Headcount": {
+            "description": "Number of employees",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "Desk Sharing Ratio Add On": {
+            "description": "Number of employees",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+        },
+        "Occupation Category": {
+            "type": "string",
+            "enum": [
+                "Business Operations",
+                "Professional and Related",
+                "Office and Administrative",
+                "Sales (HQ)",
+                "Field Staff (Sales, Consulting, etc)"
+            ]
+        },
+        "Complexity": {
+            "type": "string",
+            "description": "The level of complexity of the space for this department",
+            "enum": [
+                "Base",
+                "Medium",
+                "High"
+            ]
+        }
+    },
+    "additionalProperties": false
+}

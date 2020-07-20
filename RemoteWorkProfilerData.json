@@ -1,0 +1,33 @@
+{
+    "$id": "https://raw.githubusercontent.com/andrewheumann/AndrewSchemas/master/RemoteWorkProfilerData.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Profile of the number of days employees work from home each week.",
+    "title": "RemoteWorkProfilerData",
+    "x-namespace": "Elements",
+    "allOf": [
+        {
+            "$ref": "https://hypar.io/Schemas/Element.json"
+        }
+    ],
+    "type": "object",
+    "discriminator": "discriminator",
+    "properties": {
+        "Total Headcount": {
+            "description": "Number of employees",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 10000
+        },
+        "Override Or Not": {
+            "type": "string",
+            "description": "Default or Override for Remote Work Profiler"
+        },
+        "Country": {
+            "type": "string"
+        },
+        "Sector": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}
