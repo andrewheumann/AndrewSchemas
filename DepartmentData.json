@@ -47,9 +47,9 @@
             "type": "string",
             "description": "The level of complexity of the space for this department",
             "enum": [
-                "Base",
-                "Medium",
-                "High"
+                "Good",
+                "Better",
+                "Best"
             ]
         }
     },
