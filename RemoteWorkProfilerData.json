@@ -25,7 +25,22 @@
         "Country": {
             "type": "string"
         },
+        "City": {
+            "type": "string"
+        },
         "Sector": {
+            "type": "string"
+        },
+        "Fit Loss Factor": {
+            "type": "number"
+        },
+        "Circulation Percentage": {
+            "type": "number"
+        },
+        "Area per Headcount": {
+            "type": "number"
+        },
+        "Style": {
             "type": "string"
         }
     },

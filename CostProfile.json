@@ -1,0 +1,29 @@
+{
+    "$id": "https://raw.githubusercontent.com/andrewheumann/AndrewSchemas/master/CostProfile.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Profile of the number of days employees work from home each week.",
+    "title": "CostProfile",
+    "x-namespace": "Elements",
+    "allOf": [
+        {
+            "$ref": "https://hypar.io/Schemas/Element.json"
+        }
+    ],
+    "type": "object",
+    "discriminator": "discriminator",
+    "properties": {
+        "Good": {
+            "description": "Total Cost under Good quality assumptions",
+            "type": "number"
+        },
+        "Better": {
+            "description": "Total Cost under Better quality assumptions",
+            "type": "number"
+        },
+        "Best": {
+            "description": "Total Cost under Best quality assumptions",
+            "type": "number"
+        }
+    },
+    "additionalProperties": false
+}
