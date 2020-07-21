@@ -13,15 +13,15 @@
     "discriminator": "discriminator",
     "properties": {
         "Good": {
-            "description": "Total Cost under Good quality assumptions",
+            "description": "Cost under Good quality assumptions",
             "type": "number"
         },
         "Better": {
-            "description": "Total Cost under Better quality assumptions",
+            "description": "Cost under Better quality assumptions",
             "type": "number"
         },
         "Best": {
-            "description": "Total Cost under Best quality assumptions",
+            "description": "Cost under Best quality assumptions",
             "type": "number"
         }
     },
