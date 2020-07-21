@@ -1,0 +1,65 @@
+{
+    "$id": "https://raw.githubusercontent.com/andrewheumann/AndrewSchemas/master/ROMBudgetCalc.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Profile of the number of days employees work from home each week.",
+    "title": "ROMBudgetCalc",
+    "x-namespace": "Elements",
+    "allOf": [
+        {
+            "$ref": "https://hypar.io/Schemas/Element.json"
+        }
+    ],
+    "type": "object",
+    "discriminator": "discriminator",
+    "properties": {
+        "Departments": {
+            "type": "string"
+        },
+        "Occupation Categories": {
+            "type": "string"
+        },
+        "Current Headcount": {
+            "type": "number"
+        },
+        "Forecast Headcount": {
+            "type": "number"
+        },
+        "Avg Peak In Office Pct": {
+            "type": "number"
+        },
+        "Avg Peak In Office Headcount": {
+            "type": "number"
+        },
+        "Desk Sharing Ratio Add On ": {
+            "type": "number"
+        },
+        "Desk Sharing Ratio": {
+            "type": "number"
+        },
+        "Actual Reqd Seat Count": {
+            "type": "number"
+        },
+        "Current Area": {
+            "type": "number"
+        },
+        "Forecast Reqd Area": {
+            "type": "number"
+        },
+        "Actual Reqd Area": {
+            "type": "number"
+        },
+        "Complexity": {
+            "type": "string"
+        },
+        "Cost per SF": {
+            "type": "number"
+        },
+        "Forecast Budget": {
+            "type": "number"
+        },
+        "Actual Budget": {
+            "type": "number"
+        }
+    },
+    "additionalProperties": false
+}
