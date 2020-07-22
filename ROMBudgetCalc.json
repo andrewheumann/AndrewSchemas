@@ -27,16 +27,16 @@
         "Avg Peak In Office Pct": {
             "type": "number"
         },
-        "Avg Peak In Office Headcount": {
+        "Avg Peak Attendance": {
             "type": "number"
         },
-        "Desk Sharing Ratio Add On ": {
+        "Peak Attendance Variable": {
             "type": "number"
         },
         "Desk Sharing Ratio": {
             "type": "number"
         },
-        "Actual Reqd Seat Count": {
+        "Predicted Peak Attendance": {
             "type": "number"
         },
         "Current Area": {
@@ -45,10 +45,10 @@
         "Forecast Reqd Area": {
             "type": "number"
         },
-        "Actual Reqd Area": {
+        "Predicted Reqd Area": {
             "type": "number"
         },
-        "Complexity": {
+        "Budget Range": {
             "type": "string"
         },
         "Cost per SF": {
@@ -57,7 +57,7 @@
         "Forecast Budget": {
             "type": "number"
         },
-        "Actual Budget": {
+        "Predicted Budget": {
             "type": "number"
         }
     },
