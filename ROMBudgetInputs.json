@@ -1,0 +1,35 @@
+{
+    "$id": "https://raw.githubusercontent.com/andrewheumann/AndrewSchemas/master/ROMBudgetInputs.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Profile of the number of days employees work from home each week.",
+    "title": "ROMBudgetInputs",
+    "x-namespace": "Elements",
+    "allOf": [
+        {
+            "$ref": "https://hypar.io/Schemas/Element.json"
+        }
+    ],
+    "type": "object",
+    "discriminator": "discriminator",
+    "properties": {
+        "City": {
+            "type": "string"
+        },
+        "Fit Loss Factor": {
+            "type": "number"
+        },
+        "Circulation Percentage": {
+            "type": "number"
+        },
+        "Area per Headcount": {
+            "type": "number"
+        },
+        "Construction Complexity": {
+            "type": "string"
+        },
+        "Work Style": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}
