@@ -17,6 +17,7 @@
         },
         "Program Color": {
             "type": "object",
+            "Title": "Color",
             "discriminator": "Elements.Geometry.Color",
             "properties": {
                 "Red": {
