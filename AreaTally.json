@@ -16,20 +16,7 @@
             "type": "string"
         },
         "Program Color": {
-            "type": "object",
-            "Title": "Color",
-            "discriminator": "Elements.Geometry.Color",
-            "properties": {
-                "Red": {
-                    "type": "number"
-                },
-                "Green": {
-                    "type": "number"
-                },
-                "Blue": {
-                    "type": "number"
-                }
-            }
+           "$ref": "https://hypar.io/Schemas/Geometry/Color.json"
         },
         "Area Target": {
             "type": "number",
