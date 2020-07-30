@@ -12,35 +12,33 @@
     "type": "object",
     "discriminator": "discriminator",
     "properties": {
-        "Label": {
+        "Program Type": {
             "type": "string"
         },
-        "focus.phone_room": {
-            "type": "number"
+        "Program Color": {
+            "type": "object",
+            "discriminator": "Elements.Geometry.Color",
+            "properties": {
+                "Red": {
+                    "type": "number"
+                },
+                "Green": {
+                    "type": "number"
+                },
+                "Blue": {
+                    "type": "number"
+                }
+            }
         },
-        "meet.conference_room": {
-            "type": "number"
+        "Area Target": {
+            "type": "number",
+            "$hyparUnitType": "area",
+            "$hyparUnitSystem": "Metric"
         },
-        "meet.huddle_room": {
-            "type": "number"
-        },
-        "meet.open_collab": {
-            "type": "number"
-        },
-        "social.general": {
-            "type": "number"
-        },
-        "social.reception": {
-            "type": "number"
-        },
-        "support.general": {
-            "type": "number"
-        },
-        "work.office": {
-            "type": "number"
-        },
-        "work.work_station": {
-            "type": "number"
+        "Achieved Area": {
+            "type": "number",
+            "$hyparUnitType": "area",
+            "$hyparUnitSystem": "Metric"
         }
     },
     "additionalProperties": false
