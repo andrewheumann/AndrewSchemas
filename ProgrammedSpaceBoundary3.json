@@ -1,8 +1,8 @@
 {
-    "$id": "ProgrammedSpaceBoundary",
+    "$id": "ProgramArea",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A set of data for executing an optimization service request.",
-    "title": "ProgrammedSpaceBoundary",
+    "title": "ProgramArea",
     "x-namespace": "Elements",
     "type": [
         "object",
