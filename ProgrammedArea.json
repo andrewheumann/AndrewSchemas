@@ -1,8 +1,8 @@
 {
-    "$id": "ProgramArea",
+    "$id": "ProgrammedArea",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "A set of data for executing an optimization service request.",
-    "title": "ProgramArea",
+    "description": "An area with a designated program",
+    "title": "ProgrammedArea",
     "x-namespace": "Elements",
     "type": [
         "object",
@@ -20,15 +20,15 @@
             "description": "The boundary of the space",
             "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
         },
-        "Primary_Axis": {
+        "PrimaryAxis": {
             "description": "The primary orientation of the space",
             "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
         },
-        "Secondary_Axis": {
+        "SecondaryAxis": {
             "description": "The Secondary orientation of the space",
             "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
         },
-        "Program_Type": {
+        "ProgramType": {
             "description": "The type of program in this space",
             "type": "string"
         }
