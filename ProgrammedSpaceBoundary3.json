@@ -20,15 +20,15 @@
             "description": "The boundary of the space",
             "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
         },
-        "Primary Axis": {
+        "Primary_Axis": {
             "description": "The primary orientation of the space",
             "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
         },
-        "Secondary Axis": {
+        "Secondary_Axis": {
             "description": "The Secondary orientation of the space",
             "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
         },
-        "Program Type": {
+        "Program_Type": {
             "description": "The type of program in this space",
             "type": "string"
         }
