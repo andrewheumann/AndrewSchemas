@@ -52,6 +52,9 @@
                     "items": {
                         "type": "string"
                     }
+                },
+                "total_score": {
+                    "type": "number"
                 }
             }
         }
