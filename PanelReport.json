@@ -1,0 +1,26 @@
+{
+    "$id": "https://raw.githubusercontent.com/andrewheumann/AndrewSchemas/master/PanelReport.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A tally of the unique panel sizes",
+    "title": "PanelReport",
+    "x-namespace": "Elements",
+    "allOf": [
+        {
+            "$ref": "https://hypar.io/Schemas/Element.json"
+        }
+    ],
+    "type": "object",
+    "discriminator": "discriminator",
+    "properties": {
+        "Identifier": {
+            "type": "string"
+        },
+        "Display Color": {
+           "$ref": "https://hypar.io/Schemas/Geometry/Color.json"
+        },
+        "Instance Count": {
+            "type": "number"
+        }
+    },
+    "additionalProperties": false
+}
