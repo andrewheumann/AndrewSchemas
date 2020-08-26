@@ -1,0 +1,23 @@
+{
+    "x-namespace": "Elements",
+    "allOf": [
+        {
+            "$ref": "https://hypar.io/Schemas/Element.json"
+        }
+    ],
+    "required": [],
+    "properties": {
+        "Meshes": {
+            "type": "array",
+            "items": {
+                "$ref": "https://hypar.io/Schemas/Mesh.json"
+            }
+        }
+    },
+    "additionalProperties": false,
+    "$id": "47da3185-304e-43da-b78b-7c2fe9e7ce75",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "discriminator": "discriminator",
+    "type": "object",
+    "title": "TestMeshList"
+}
