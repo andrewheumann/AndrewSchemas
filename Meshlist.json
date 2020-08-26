@@ -1,11 +1,10 @@
 {
-    "x-namespace": "Elements",
-    "allOf": [
-        {
-            "$ref": "https://hypar.io/Schemas/Element.json"
-        }
-    ],
-    "required": [],
+    "$id": "https://hypar.io/Schemas/MeshList.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Data from a file input.",
+    "x-namespace": "Hypar.Functions.Execution",
+    "title": "MeshList",
+    "type": "object",
     "properties": {
         "Meshes": {
             "type": "array",
@@ -14,10 +13,5 @@
             }
         }
     },
-    "additionalProperties": false,
-    "$id": "47da3185-304e-43da-b78b-7c2fe9e7ce75",
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "discriminator": "discriminator",
-    "type": "object",
-    "title": "TestMeshList"
+    "additionalProperties": false
 }
