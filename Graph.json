@@ -1,7 +1,7 @@
 {
-    "$id": "https://hypar.io/Schemas/Network.json",
+    "$id": "https://hypar.io/Schemas/Graph.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Network",
+    "title": "Graph",
     "type": "object",
     "properties": {
         "Nodes": {
@@ -9,12 +9,12 @@
             "items": {
                 "type": "object",
                 "required": [
-                    "Index",
+                    "Id",
                     "Name"
                 ],
                 "properties": {
-                    "Index": {
-                        "type": "integer"
+                    "Id": {
+                        "type": "string"
                     },
                     "Name": {
                         "type": "string"
@@ -35,15 +35,15 @@
             "items": {
                 "type": "object",
                 "required": [
-                    "FromIndex",
-                    "ToIndex"
+                    "FromId",
+                    "ToId"
                 ],
                 "properties": {
-                    "FromIndex": {
-                        "type": "integer"
+                    "FromId": {
+                        "type": "string"
                     },
-                    "ToIndex": {
-                        "type": "integer"
+                    "ToId": {
+                        "type": "string"
                     },
                     "Weight": {
                         "type": "number",
