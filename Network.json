@@ -1,0 +1,37 @@
+{
+    "$id": "https://hypar.io/Schemas/Network.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "Nodes": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Index": {
+                        "type": "integer"
+                    },
+                    "Name": {
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": true
+            }
+        },
+        "Edges": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "FromIndex": {
+                        "type": "integer"
+                    },
+                    "ToIndex": {
+                        "type": "integer"
+                    }
+                },
+                "additionalProperties": true
+            }
+        }
+    }
+}
