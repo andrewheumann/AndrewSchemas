@@ -3,55 +3,16 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Graph",
     "type": "object",
+    "required": [
+        "Nodes",
+        "Edges"
+    ],
     "properties": {
         "Nodes": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "required": [
-                    "Id",
-                    "Name"
-                ],
-                "properties": {
-                    "Id": {
-                        "type": "string"
-                    },
-                    "Name": {
-                        "type": "string"
-                    },
-                    "Color": {
-                        "$ref": "https://hypar.io/Schemas/Geometry/Color.json"
-                    },
-                    "Size": {
-                        "type": "number",
-                        "minimum": 0
-                    }
-                },
-                "additionalProperties": true
-            }
+            "type": "array"
         },
         "Edges": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "required": [
-                    "FromId",
-                    "ToId"
-                ],
-                "properties": {
-                    "FromId": {
-                        "type": "string"
-                    },
-                    "ToId": {
-                        "type": "string"
-                    },
-                    "Weight": {
-                        "type": "number",
-                        "default": 1
-                    }
-                },
-                "additionalProperties": true
-            }
+            "type": "array"
         }
     }
 }
