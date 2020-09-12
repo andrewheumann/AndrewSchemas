@@ -1,0 +1,54 @@
+{
+    "$id": "https://raw.githubusercontent.com/andrewheumann/AndrewSchemas/master/ProgramAdjacencyMatrix.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A representation of spaces, areas, and adjacencies",
+    "title": "ProgramAdjacencyMatrix",
+    "x-namespace": "Elements",
+    "allOf": [
+        {
+            "$ref": "https://hypar.io/Schemas/Element.json"
+        }
+    ],
+    "type": "object",
+    "discriminator": "discriminator",
+    "properties": {
+        "Nodes": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "$hyparStyle": "row",
+                "properties": {
+                    "Program Name": {
+                        "type": "string"
+                    },
+                    "Color": {
+                        "description": "",
+                        "$ref": "https://hypar.io/Schemas/Geometry/Color.json"
+                    },
+                    "Area": {
+                        "type": "number",
+                        "$hyparUnitType": "area"
+                    }
+                }
+            }
+        },
+        "Edges": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "From": {
+                        "type": "integer"
+                    },
+                    "To": {
+                        "type": "integer"
+                    },
+                    "Weight": {
+                        "type": "number"
+                    }
+                }
+            }
+        }
+    },
+    "additionalProperties": false
+}
