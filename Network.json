@@ -7,12 +7,23 @@
             "type": "array",
             "items": {
                 "type": "object",
+                "required": [
+                    "Index",
+                    "Name"
+                ],
                 "properties": {
                     "Index": {
                         "type": "integer"
                     },
                     "Name": {
                         "type": "string"
+                    },
+                    "Color": {
+                        "$ref": "https://hypar.io/Schemas/Geometry/Color.json"
+                    },
+                    "Size": {
+                        "type": "number",
+                        "minimum": 0
                     }
                 },
                 "additionalProperties": true
@@ -22,12 +33,20 @@
             "type": "array",
             "items": {
                 "type": "object",
+                "required": [
+                    "FromIndex",
+                    "ToIndex"
+                ],
                 "properties": {
                     "FromIndex": {
                         "type": "integer"
                     },
                     "ToIndex": {
                         "type": "integer"
+                    },
+                    "Weight": {
+                        "type": "number",
+                        "default": 1
                     }
                 },
                 "additionalProperties": true
