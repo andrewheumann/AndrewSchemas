@@ -25,7 +25,8 @@
             "type": "number"
         },
         "Avg Peak In Office Pct": {
-            "type": "number"
+            "type": "number",
+            "$hyparUnitType": "ratio"
         },
         "Avg Peak Attendance": {
             "type": "number"
