@@ -40,18 +40,21 @@
             "type": "number"
         },
         "Current Area": {
-            "type": "number"
+            "type": "number",
+            "$hyparUnitType": "area"
         },
         "Forecast Reqd Area": {
-            "type": "number"
+            "type": "number",
+            "$hyparUnitType": "area"
         },
         "Predicted Reqd Area": {
-            "type": "number"
+            "type": "number",
+            "$hyparUnitType": "area"
         },
         "Budget Range": {
             "type": "string"
         },
-        "Cost per SF": {
+        "Cost per Area": {
             "type": "number"
         },
         "Forecast Budget": {
