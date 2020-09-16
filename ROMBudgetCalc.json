@@ -31,10 +31,12 @@
             "type": "number"
         },
         "Peak Attendance Variable": {
-            "type": "number"
+            "type": "number",
+            "$hyparUnitType": "ratio"
         },
         "Desk Sharing Ratio": {
-            "type": "number"
+            "type": "number",
+            "$hyparUnitType": "ratio"
         },
         "Predicted Peak Attendance": {
             "type": "number"
