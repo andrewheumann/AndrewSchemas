@@ -1,0 +1,25 @@
+{
+    "$id": "LevelElements",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "An element containing a collection of Elements that belong to one level.",
+    "title": "LevelElements",
+    "x-namespace": "Elements",
+    "allOf": [
+        {
+            "$ref": "https://raw.githubusercontent.com/andrewheumann/AndrewSchemas/master/Element.json"
+        }
+    ],
+    "type": "object",
+    "required": [],
+    "discriminator": "discriminator",
+    "properties": {
+        "Elements": {
+            "type": "array",
+            "description": "The list of elements.",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/andrewheumann/AndrewSchemas/master/Element.json"
+            }
+        }
+    },
+    "additionalProperties": false
+}
