@@ -28,7 +28,10 @@
         },
         "Cells": {
             "description": "Component cells making up the boundary",
-            "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+            "type": "array",
+            "items": {
+                "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+            }
         }
     },
     "additionalProperties": false
