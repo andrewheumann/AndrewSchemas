@@ -40,7 +40,7 @@
             "$hyparUnitType": "ratio"
         },
         "Predicted Peak Attendance": {
-            "type": "number"
+            "type": "integer"
         },
         "Current Area": {
             "type": "number",
