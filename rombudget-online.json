@@ -1,16 +1,12 @@
 {
-    "$id": "https://raw.githubusercontent.com/andrewheumann/AndrewSchemas/master/ROMBudgetCalc.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Profile of the number of days employees work from home each week.",
-    "title": "ROMBudgetCalc",
+    "description": "Profile of a raw order-of-magnitude budget.",
     "x-namespace": "Elements",
     "allOf": [
         {
             "$ref": "https://hypar.io/Schemas/Element.json"
         }
     ],
-    "type": "object",
-    "discriminator": "discriminator",
+    "required": [],
     "properties": {
         "Departments": {
             "type": "string"
@@ -25,19 +21,16 @@
             "type": "number"
         },
         "Avg Peak In Office Pct": {
-            "type": "number",
-            "$hyparUnitType": "ratio"
+            "type": "number"
         },
         "Avg Peak Attendance": {
             "type": "number"
         },
-        "Peak Attendance Contingency": {
-            "type": "number",
-            "$hyparUnitType": "ratio"
+        "Peak Attendance Variable": {
+            "type": "number"
         },
         "Desk Sharing Ratio": {
-            "type": "number",
-            "$hyparUnitType": "ratio"
+            "type": "number"
         },
         "Predicted Peak Attendance": {
             "type": "number"
@@ -67,5 +60,10 @@
             "type": "number"
         }
     },
-    "additionalProperties": false
+    "additionalProperties": false,
+    "$id": "77b8634c-b760-4792-9bfb-3ada50302143",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "discriminator": "discriminator",
+    "type": "object",
+    "title": "ROM Budget Calc"
 }

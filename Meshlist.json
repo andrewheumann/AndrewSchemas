@@ -6,11 +6,9 @@
     "title": "MeshList",
     "type": "object",
     "properties": {
-        "Meshes": {
+        "meshes": {
             "type": "array",
-            "items": {
-                "$ref": "https://hypar.io/Schemas/Mesh.json"
-            }
+            "$ref": "https://hypar.io/Schemas/Mesh.json"
         }
     },
     "additionalProperties": false
