@@ -31,7 +31,7 @@
         "Avg Peak Attendance": {
             "type": "number"
         },
-        "Peak Attendance Variable": {
+        "Peak Attendance Contingency": {
             "type": "number",
             "$hyparUnitType": "ratio"
         },
