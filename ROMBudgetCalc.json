@@ -36,8 +36,7 @@
             "$hyparUnitType": "ratio"
         },
         "Desk Sharing Ratio": {
-            "type": "number",
-            "$hyparUnitType": "ratio"
+            "type": "number"
         },
         "Predicted Workpoints": {
             "type": "number",
