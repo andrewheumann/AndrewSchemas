@@ -39,7 +39,7 @@
             "type": "number",
             "$hyparUnitType": "ratio"
         },
-        "Predicted Peak Attendance": {
+        "Predicted Workpoints": {
             "type": "number",
             "multipleOf": 1
         },
