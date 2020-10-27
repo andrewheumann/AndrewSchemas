@@ -27,7 +27,15 @@
             "type": "number",
             "$hyparUnitType": "area",
             "$hyparUnitSystem": "Metric"
-        }
+        },
+        "Budget Range": {
+            "type": "string",
+            "enum": [
+              "Good",
+              "Better",
+              "Best"
+            ]
+          }
     },
     "additionalProperties": false
 }
