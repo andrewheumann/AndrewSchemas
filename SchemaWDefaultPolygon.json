@@ -1,0 +1,53 @@
+{
+    "$id": "https://raw.githubusercontent.com/andrewheumann/AndrewSchemas/master/SchemaWDefault.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A tally of the area deltas between targets + results",
+    "title": "SchemaWDefault",
+    "x-namespace": "Elements",
+    "allOf": [
+        {
+            "$ref": "https://hypar.io/Schemas/Element.json"
+        }
+    ],
+    "type": "object",
+    "discriminator": "discriminator",
+    "properties": {
+        "Program Type": {
+            "type": "string",
+            "default": "FLABLICK"
+        },
+        "Area Target": {
+            "type": "number",
+            "default": 1000
+        },
+        "Some Polygon Property": {
+            "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json",
+            "default": {
+                "Vertices": [
+                    {
+                        "X": -7.413475969655131,
+                        "Y": 7.669260403275523,
+                        "Z": 0
+                    },
+                    {
+                        "X": 34.205673336301196,
+                        "Y": -0.5682720510532988,
+                        "Z": 0
+                    },
+                    {
+                        "X": 44.48097865738682,
+                        "Y": 25.649239650183077,
+                        "Z": 0
+                    },
+                    {
+                        "X": 12.84367426242165,
+                        "Y": 38.048698679663,
+                        "Z": 0
+                    }
+                ],
+                "discriminator": "Elements.Geometry.Polygon"
+            }
+        }
+    },
+    "additionalProperties": false
+}
