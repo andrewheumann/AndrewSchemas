@@ -1,0 +1,41 @@
+{
+    "$id": "https://github.com/andrewheumann/AndrewSchemas/blob/master/LevelInputs.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "Base Levels": {
+        "description": "Supply a list of level floor-to-floor heights. The last supplied value will be treated as the typical level height and repeated until the top level.",
+        "type": "array",
+        "items": {
+          "type": "number",
+          "minimum": 3.0,
+          "maximum": 20.0,
+          "$hyparUnitType": "length",
+          "multipleOf": 0.1,
+          "default": 4.0
+        },
+        "default": [
+          6.0,
+          4.0
+        ]
+      },
+      "Top Level Height": {
+        "type": "number",
+        "description": "Height of the penthouse level.",
+        "minimum": 3.0,
+        "maximum": 20.0,
+        "$hyparUnitType": "length",
+        "multipleOf": 0.1,
+        "default": 5.0
+      },
+      "Subgrade Level Height": {
+        "type": "number",
+        "description": "Height of levels below grade.",
+        "minimum": 2.7,
+        "maximum": 6,
+        "$hyparUnitType": "length",
+        "multipleOf": 0.1,
+        "default": 3.0
+      }
+    }
+  }
