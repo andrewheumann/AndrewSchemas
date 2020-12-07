@@ -29,6 +29,10 @@
         "Color": {
             "description": "The color of this area",
             "$ref": "https://hypar.io/Schemas/Geometry/Color.json"
+        },
+        "Area": {
+            "type": "number",
+            "$hyparUnitType": "area"
         }
     },
     "additionalProperties": false
