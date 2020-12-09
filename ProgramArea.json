@@ -1,7 +1,7 @@
 {
     "$id": "https://hypar.io/BuildingBlocks/schemas/ProgramArea.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "A Program Area",
+    "description": "Represents a program area",
     "title": "ProgramArea",
     "x-namespace": "Elements",
     "type": [
@@ -14,8 +14,7 @@
         }
     ],
     "required": [
-        "discriminator",
-        "Boundary"
+        "discriminator"
     ],
     "discriminator": "discriminator",
     "properties": {
