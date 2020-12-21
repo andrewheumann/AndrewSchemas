@@ -30,12 +30,17 @@
         "Work Style": {
             "type": "string"
         },
-        "Excluded Budget Factors": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            },
-            "default": []
+        "FF&E Multiplier": {
+            "type": "integer",
+            "default": 1
+        },
+        "Furniture Multiplier": {
+            "type": "integer",
+            "default": 1
+        },
+        "AV Multiplier": {
+            "type": "integer",
+            "default": 1
         }
     },
     "additionalProperties": false
