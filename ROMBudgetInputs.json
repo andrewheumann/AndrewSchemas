@@ -29,6 +29,13 @@
         },
         "Work Style": {
             "type": "string"
+        },
+        "Excluded Budget Factors": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "default": []
         }
     },
     "additionalProperties": false
