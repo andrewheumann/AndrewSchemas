@@ -31,15 +31,15 @@
             "type": "string"
         },
         "FF&E Multiplier": {
-            "type": "integer",
+            "type": "number",
             "default": 1
         },
         "Furniture Multiplier": {
-            "type": "integer",
+            "type": "number",
             "default": 1
         },
         "AV Multiplier": {
-            "type": "integer",
+            "type": "number",
             "default": 1
         }
     },
