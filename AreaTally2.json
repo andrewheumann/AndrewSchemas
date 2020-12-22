@@ -1,0 +1,41 @@
+{
+    "$id": "https://raw.githubusercontent.com/andrewheumann/AndrewSchemas/master/AreaTally.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A tally of the area deltas between targets + results",
+    "title": "AreaTally",
+    "x-namespace": "Elements",
+    "allOf": [
+        {
+            "$ref": "https://hypar.io/Schemas/Element.json"
+        }
+    ],
+    "type": "object",
+    "discriminator": "discriminator",
+    "properties": {
+        "Program Type": {
+            "type": "string"
+        },
+        "Program Color": {
+           "$ref": "https://hypar.io/Schemas/Geometry/Color.json"
+        },
+        "Area Target": {
+            "type": "number",
+            "$hyparUnitType": "area",
+            "$hyparUnitSystem": "Metric"
+        },
+        "Achieved Area": {
+            "type": "number",
+            "$hyparUnitType": "area",
+            "$hyparUnitSystem": "Metric"
+        },
+        "Budget Range": {
+            "type": "string",
+            "enum": [
+              "Good",
+              "Better",
+              "Best"
+            ]
+          }
+    },
+    "additionalProperties": false
+}
