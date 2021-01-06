@@ -1,0 +1,30 @@
+{
+    "$id": "https://hypar.io/BuildingBlocks/schemas/ProtoCell.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A profile indicating a space boundary.",
+    "title": "ProtoCell",
+    "x-namespace": "Elements",
+    "type": [
+        "object",
+        "null"
+    ],
+    "allOf": [
+        {
+            "$ref": "https://raw.githubusercontent.com/andrewheumann/AndrewSchemas/master/SpaceBoundary.json"
+        }
+    ],
+    "discriminator": "discriminator",
+    "properties": {
+        "discriminator": {
+            "type": "string"
+        },
+        "Centroid": {
+            "$ref": "https://hypar.io/Schemas/Geometry/Vector3.json"
+        },
+        "SourceId": {
+            "type": "string"
+        }
+       
+    },
+    "additionalProperties": false
+}
