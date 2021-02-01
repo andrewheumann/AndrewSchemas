@@ -30,6 +30,9 @@
         "Work Style": {
             "type": "string"
         },
+        "Operational Cost": {
+            "type": "number"
+        },
         "Hard Costs Multiplier": {
             "type": "number",
             "default": 1
