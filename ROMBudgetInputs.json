@@ -30,7 +30,35 @@
         "Work Style": {
             "type": "string"
         },
+        "Hard Costs Multiplier": {
+            "type": "number",
+            "default": 1
+        },
+        "Soft Costs Multiplier": {
+            "type": "number",
+            "default": 1
+        },
         "FF&E Multiplier": {
+            "type": "number",
+            "default": 1
+        },
+        "Tenant Factors Multiplier": {
+            "type": "number",
+            "default": 1
+        },
+        "Security Multiplier": {
+            "type": "number",
+            "default": 1
+        },
+        "IT Multiplier": {
+            "type": "number",
+            "default": 1
+        },
+        "Builder Works Multiplier": {
+            "type": "number",
+            "default": 1
+        },
+        "MEP Multiplier": {
             "type": "number",
             "default": 1
         },
@@ -39,6 +67,18 @@
             "default": 1
         },
         "AV Multiplier": {
+            "type": "number",
+            "default": 1
+        },
+        "Category B Multiplier": {
+            "type": "number",
+            "default": 1
+        },
+        "Fee Multiplier": {
+            "type": "number",
+            "default": 1
+        },
+        "Contingency Multiplier": {
             "type": "number",
             "default": 1
         }
