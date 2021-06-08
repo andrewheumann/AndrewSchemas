@@ -18,6 +18,10 @@
         "Fit Loss Factor": {
             "type": "number"
         },
+        "TI Allowance": {
+            "type": "number",
+            "$hyparUnitType": "ratio"
+        },
         "Circulation Percentage": {
             "type": "number"
         },
